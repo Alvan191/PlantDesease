@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">PlantDesease</string>
+    <string name="move_activity">Pindah Aktivitas</string>
+    <string name="this_is_home">Halaman Utama</string>
+</resources>
