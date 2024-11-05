@@ -11,7 +11,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="25dp"
+        android:layout_marginTop="50dp"
         android:orientation="horizontal"
         android:gravity="center_vertical">
 
@@ -44,7 +44,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
                 android:text="My Puppy"
-                android:textSize="12sp"
+                android:textSize="14sp"
                 android:textColor="#000000"
                 android:gravity="center_vertical" />
             <TextView
@@ -67,7 +67,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginStart="24dp"
         android:layout_marginEnd="24dp"
-        android:layout_marginTop="90dp"
+        android:layout_marginTop="135dp"
         app:cardBackgroundColor="#c6c7c5"
         app:cardCornerRadius="16dp">
 
@@ -108,7 +108,7 @@
                 android:layout_gravity="center"
                 android:text="Know plant desease with this Application"
                 android:textColor="#000000"
-                android:textSize="12sp"
+                android:textSize="14sp"
                 android:textStyle="bold" />
 
             <TextView
@@ -118,7 +118,7 @@
                 android:layout_gravity="center"
                 android:text="Take a picture or Scan the plant know the desease"
                 android:textColor="#000000"
-                android:textSize="12sp" />
+                android:textSize="13sp" />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/learnMoreButton"
@@ -131,13 +131,13 @@
                 app:backgroundTint="@android:color/white"
                 app:strokeColor="#81c779"
                 app:strokeWidth="1dp"
-                app:cornerRadius="4dp" />
+                app:cornerRadius="10dp" />
         </LinearLayout>
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="300dp"
+        android:layout_height="380dp"
         android:layout_below="@id/cardView2"
         android:layout_centerHorizontal="true"
         android:layout_marginStart="24dp"
@@ -166,11 +166,37 @@
             <ListView
                 android:id="@+id/listView"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:padding="20dp"
+                android:divider="#f2f2f2"
+                android:dividerHeight="1dp">
 
             </ListView>
 
         </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="4dp"
+        app:cardBackgroundColor="#636363">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNavigationView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:itemIconTint="#52854a"
+            app:itemTextColor="#52854a"
+            app:menu="@menu/bottom_nav" />
     </androidx.cardview.widget.CardView>
 
 </RelativeLayout>
